@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  --errorMsgFontSize: 15px;
+}
+
+.container {
+  border: solid 4px;
+  text-align: center;
+}
+
+#email:invalid {
+  background-color: rgb(255, 132, 132);
+}
+
+#zip:invalid {
+  background-color: rgb(255, 132, 132);
+}
+
+.errorMsgs {
+  font-size: var(--errorMsgFontSize);
+  display: block;
+  margin: 2px;
+  margin-top: -10px;
+  color: red;
+}
+
+.errorMsgsDiv {
+  height: var(--errorMsgFontSize);
+}
+
+#successMsg {
+  font-size: 1rem;
+  color: green;
+}
